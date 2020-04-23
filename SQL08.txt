@@ -1,0 +1,74 @@
+﻿信息系统与数据库技术练习8答题卡
+
+班级：19信管1班    
+姓名：    张舒倩 
+学号：   20190307137  
+
+注：请将答案放置在序号下方。*/
+
+（一）
+1.USE EDUC
+
+
+
+2.UPDATE Books
+SET Bname ='高等数学',Price=35.6
+WHERE Author='张建林'
+
+
+
+3.UPDATE Books
+SET Discount+0.05
+
+
+
+
+
+4.SELECT *
+FROM Books
+
+
+
+5.SELECT TOP 10 *
+FROM Student
+
+
+
+6.SELECT TOP 20 PERCENT  *
+FROM SC
+
+
+7.SELECT *
+FROM Studen
+WHERE Sex = '女'
+
+
+
+8SELECT *
+FROM SC
+WHERE SCscore<60
+
+
+9.SELECT  Bname,Author,Publisher,ISBN
+FROM Books
+
+
+10.SELECT DISTINCT Cid
+FROM SC
+
+
+11.SELECT PublisherDate,Bname,Author,PublisherDate
+FROM Books
+WHERE YEAR(PublisherDate)=2012
+
+
+
+12.SELECT Sid AS 学号,Cid AS课程号,SCscore AS成绩
+
+FROM SC
+
+
+13.SELECT  Sid，Sname，Sex(YY,Birth,GETDATE()) AS Age
+
+14.SELECT *，   Price*Discount AS DiscountPrice ，Price-Price*DiscountASEconomize
+FROM Books
